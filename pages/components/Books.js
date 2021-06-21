@@ -4,7 +4,7 @@ export default function Books({ data }) {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center">
       {data.books.map((book) => (
-        <div key={book.id} className="p-2 m-2 max-w-max bg-light shadow-xl">
+        <div key={book._id} className="p-2 m-2 max-w-max bg-light shadow-xl">
           <Image
             src={book.url}
             alt={book.name}

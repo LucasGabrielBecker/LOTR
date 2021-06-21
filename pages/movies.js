@@ -18,7 +18,7 @@ function Movies() {
       <div className="grid md:grid-cols-2 p-8 lg:grid-cols-4 justify-center">
         {movies.map((movie) => (
           <div
-            key={movie.id}
+            key={movie._id}
             className="p-2 m-2 max-w-max bg-light shadow-xl group"
           >
             <Image

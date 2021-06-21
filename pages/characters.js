@@ -11,7 +11,7 @@ function Movies() {
       <div className="grid md:grid-cols-2 p-8 lg:grid-cols-5 justify-center">
         {characters.map((character) => (
           <div
-            key={character.id}
+            key={character._id}
             className="px-2 py-5 m-2 max-w-max bg-light shadow-xl"
           >
             {character.image && (
