@@ -1,7 +1,6 @@
 import Nav from "./components/Nav";
 import data from "../utils/content.json";
 import Image from "next/image";
-import OscarSvg from "../styles/oscar.svg";
 function Movies() {
   const { movies } = data;
 

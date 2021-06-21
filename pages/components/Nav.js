@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Nav() {
@@ -7,13 +7,13 @@ export default function Nav() {
   return (
     <div className="flex flex-grow p-2 bg-secondary h-16 text-text">
       <ul className="flex">
-        <Link href="/">
+        <Link href="/" passHref>
           <li className="p-2 cursor-pointer">
             <p>Books</p>
             {pathname === "/" && <div className="flex w-100 h-px bg-green" />}
           </li>
         </Link>
-        <Link href="/movies">
+        <Link href="/movies" passHref>
           <li className="p-2 cursor-pointer">
             <p>Movies</p>
             {pathname === "/movies" && (
@@ -21,7 +21,7 @@ export default function Nav() {
             )}
           </li>
         </Link>
-        <Link href="/characters">
+        <Link href="/characters" passHref>
           <li className="p-2 cursor-pointer">
             <p>Characters</p>
             {pathname === "/characters" && (
