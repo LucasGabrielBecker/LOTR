@@ -1,7 +1,7 @@
 import Nav from "./components/Nav";
 import data from "../utils/content.json";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 function Movies() {
   const { characters } = data;
 
@@ -24,7 +24,7 @@ function Movies() {
                 className="rounded"
               />
             )}
-            <Link href={character.wikiUrl || ""}>
+            <Link href={character.wikiUrl || ""} passHref>
               <p className="text-lg font-black px-2 text-text cursor-pointer">
                 {character.name}
               </p>
